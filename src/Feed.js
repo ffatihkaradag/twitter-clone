@@ -1,5 +1,5 @@
-import React from "react";
-import "./Feed.css";
+import React from 'react'
+import './Feed.css'
 
 function Feed() {
   return (
@@ -9,7 +9,7 @@ function Feed() {
       {/*Tweetbox*/}
       {/*Post*/}
     </div>
-  );
+  )
 }
 
-export default Feed;
+export default Feed

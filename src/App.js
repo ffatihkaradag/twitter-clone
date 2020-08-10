@@ -1,7 +1,7 @@
-import React from "react";
-import "./App.css";
-import Sidebar from "./Sidebar";
-import Feed from "./Feed";
+import React from 'react'
+import './App.css'
+import Sidebar from './Sidebar'
+import Feed from './Feed'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Feed />
       {/*Widgets*/}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
