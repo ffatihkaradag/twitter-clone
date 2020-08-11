@@ -27,7 +27,7 @@ function Widgets() {
 
         <TwitterShareButton
           url={'https://twitter.com/twitter'}
-          options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}
+          options={{ text: '#reactjs is awesome', via: 'twitter' }}
         />
       </div>
     </div>
