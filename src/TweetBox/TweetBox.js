@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import './TweetBox.css'
 import { Avatar, Button } from '@material-ui/core'
-import db from './firebase'
+import db from '../firebase'
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState('')
-  const [tweetImage, setTweetImage] = useState('')
 
   const sendTweet = (e) => {
     e.preventDefault()
@@ -15,13 +14,11 @@ function TweetBox() {
       username: 'johndoe',
       verified: true,
       text: tweetMessage,
-      image: tweetImage,
       avatar:
         'https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png'
     })
 
     setTweetMessage('')
-    setTweetImage('')
   }
 
   return (
@@ -36,13 +33,6 @@ function TweetBox() {
             type="text"
           />
         </div>
-        <input
-          value={tweetImage}
-          onChange={(e) => setTweetImage(e.target.value)}
-          className="tweetBox__ImageInput"
-          placeholder="Optional: Enter image URL"
-          type="text"
-        />
         <Button onClick={sendTweet} className="tweetBox__tweetButton">
           Tweet
         </Button>
